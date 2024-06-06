@@ -15,7 +15,7 @@
         }
         h1 {
             color: #333;
-        } 
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -46,6 +46,16 @@
             text-align: center;
             margin-top: 5px;
         }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .row img {
+            flex: 1;
+            max-width: calc(25% - 20px);
+        }
     </style>
 </head>
 <body>
@@ -58,7 +68,7 @@
         <img src="smf_type0.png" alt="Photo 5">
         <img src="smf_frac_type0.png" alt="Photo 6">
         <figure>
-            <img src="fig8.png" width="800" height="800" alt="Image 7">
+            <img src="fig8.png" alt="Image 7">
             <figcaption>A reproduction of figure 8 from the paper at \(\rho_{thresh} = 5.01\left < \rho \right>\)</figcaption>
         </figure>
         <figure>
@@ -92,11 +102,14 @@ which gives the minimum 3D distance from each point to the percolating object. I
             <img src="cum_area_type0.png" width="600" height="600" alt="Image 14">
             <figcaption>Cumulative area under EDT distribution (for type 0 redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
         </figure>
-        <!-- New row of 4 images -->
+    </div>
+    <!-- New row of 4 images -->
+    <div class="row">
         <img src="sfr1.png" alt="New Image 1">
-        <img src="sfr2.png" alt="New Image 2">
-        <img src="sfr3.png" alt="New Image 3">
-        <img src="sfr4.png" alt="New Image 4">
+        
+        <img src="sfr2.png" alt="New Image 1">
+        <img src="sfr3.png" alt="New Image 1">
+        <img src="sfr4.png" alt="New Image 1">
     </div>
 </body>
 </html>
