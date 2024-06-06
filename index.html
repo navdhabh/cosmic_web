@@ -16,44 +16,36 @@
         h1 {
             color: #333;
         }
-        .gallery {
+        .gallery, .row {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             margin: 20px;
         }
-        .gallery img {
+        .gallery img, .row img {
             max-width: 100%;
             height: auto;
             border: 2px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .gallery img:hover {
+        .gallery img:hover, .row img:hover {
             border-color: #777;
         }
-        .gallery figure {
-            flex: 1 1 calc(25% - 20px); /* Four images per row */
+        .gallery figure, .row figure {
             margin: 0 10px;
             box-sizing: border-box;
         }
-        .gallery figure img {
+        .gallery figure img, .row figure img {
             width: 100%;
             height: auto;
         }
-        .gallery figcaption {
+        .gallery figcaption, .row figcaption {
             text-align: center;
             margin-top: 5px;
         }
-        .row {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px;
-        }
         .row img {
-            flex: 1;
             max-width: calc(25% - 20px);
         }
     </style>
@@ -105,11 +97,10 @@ which gives the minimum 3D distance from each point to the percolating object. I
     </div>
     <!-- New row of 4 images -->
     <div class="row">
-        <img src="sfr1.png" alt="New Image 1">
-        
-        <img src="sfr2.png" alt="New Image 1">
-        <img src="sfr3.png" alt="New Image 1">
-        <img src="sfr4.png" alt="New Image 1">
+        <img src="sfr1.png" alt="SFR Image 1">
+        <img src="sfr2.png" alt="SFR Image 2">
+        <img src="sfr3.png" alt="SFR Image 3">
+        <img src="sfr4.png" alt="SFR Image 4">
     </div>
 </body>
 </html>
