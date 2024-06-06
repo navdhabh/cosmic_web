@@ -33,6 +33,19 @@
         .gallery img:hover {
             border-color: #777;
         }
+        .gallery figure {
+            flex: 1 1 calc(25% - 20px); /* Four images per row */
+            margin: 0 10px;
+            box-sizing: border-box;
+        }
+        .gallery figure img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery figcaption {
+            text-align: center;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -50,40 +63,40 @@
         </figure>
         <figure>
             <img src="type0_overlaid1.png" width="800" height="800" alt="Image 8">
-            <figcaption> A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
+            <figcaption>A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
 which gives the minimum 3D distance from each point to the percolating object. In red are the type 0 galaxies (with stellar mass \( > 10^{8.5}M_0\)) from a 1 Mpc/h slice about X = 318 Mpc/h overlaid on the previous image.</figcaption>
         </figure>
         <figure>
             <img src="type1_overlaid1.png" width="800" height="800" alt="Image 9">
-            <figcaption> A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
+            <figcaption>A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
 which gives the minimum 3D distance from each point to the percolating object. In red are the type 1 galaxies (with stellar mass \( > 10^{8.5}M_0\)) from a 1 Mpc/h slice about X = 318 Mpc/h overlaid on the previous image.</figcaption>
         </figure>
         <figure>
             <img src="type2_overlaid1.png" width="800" height="800" alt="Image 10">
-            <figcaption> A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
+            <figcaption>A slice through the MS showing (in black) the percolating object for \(\rho_{thresh} = 5.01\left < \rho \right>\), and (in blue) the Euclidean distance transform (EDT)
 which gives the minimum 3D distance from each point to the percolating object. In red are the type 2 galaxies (with stellar mass \( > 10^{8.5}M_0\)) from a 1 Mpc/h slice about X = 318 Mpc/h overlaid on the previous image.</figcaption>
         </figure>
         <figure>
-        <img src="edt_dist.png" width="600" height="600" alt="Image 11">
-        <figcaption>A normalized distribution of Euclidean Distance Transform for redshift 0 galaxies that are not a part of the Cosmic Web.</figcaption>
-        
-            </figure>
+            <img src="edt_dist.png" width="600" height="600" alt="Image 11">
+            <figcaption>A normalized distribution of Euclidean Distance Transform for redshift 0 galaxies that are not a part of the Cosmic Web.</figcaption>
+        </figure>
         <figure>
-        <img src="edt_dist_type0_1.png" width="600" height="600" alt="Image 11">
-        <figcaption>A normalized distribution of Euclidean Distance Transform for type 0 redshift 0 galaxies that are not a part of the Cosmic Web.</figcaption>
-        
-            </figure>
-        
+            <img src="edt_dist_type0_1.png" width="600" height="600" alt="Image 12">
+            <figcaption>A normalized distribution of Euclidean Distance Transform for type 0 redshift 0 galaxies that are not a part of the Cosmic Web.</figcaption>
+        </figure>
         <figure>
             <img src="cum_area.png" width="600" height="600" alt="Image 13">
-           <figcaption>Cumulative area under EDT distrbution (for redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
-         
-            </figure>
-         <figure>
-            <img src="cum_area_type0.png" width="600" height="600" alt="Image 13">
-           <figcaption>Cumulative area under EDT distrbution (for type 0 redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
-         
-            </figure>
+            <figcaption>Cumulative area under EDT distribution (for redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
+        </figure>
+        <figure>
+            <img src="cum_area_type0.png" width="600" height="600" alt="Image 14">
+            <figcaption>Cumulative area under EDT distribution (for type 0 redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
+        </figure>
+        <!-- New row of 4 images -->
+        <img src="sfr1.png" alt="New Image 1">
+        <img src="sfr2.png" alt="New Image 2">
+        <img src="sfr3.png" alt="New Image 3">
+        <img src="sfr4.png" alt="New Image 4">
     </div>
 </body>
 </html>
