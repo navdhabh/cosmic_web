@@ -50,6 +50,12 @@
         }
         .video-container {
             margin: 20px;
+            text-align: center;
+        }
+        .video-caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
         }
     </style>
 </head>
@@ -58,9 +64,17 @@
     
     <div class="video-container">
         <iframe src="https://drive.google.com/file/d/1yULQWn4PmWLBSOIOS2xR4ryGTzdh-Ec9/preview" width="800" height="800" allow="autoplay"></iframe>
-        <iframe src="https://drive.google.com/file/d/1pzo-p-bZU-OONFksy6w1PvN6mFlIg1Xg/preview" width="770" height="800" allow="autoplay"></iframe>
+        <div class="video-caption">
+            <p>A video illustrating the 3D galaxy distribution in the Millennium Simulation at redshift 0 for galaxy stellar mass \( > 10^{9.5}M_0\).</p>
+        </div>
     </div>
 
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1pzo-p-bZU-OONFksy6w1PvN6mFlIg1Xg/preview" width="800" height="800" allow="autoplay"></iframe>
+        <div class="video-caption">
+            <p>A video illustrating the 3D galaxy distribution and the structure of the Cosmic Web overlaid on EDT (in Mpc/h) distribution (in blue) in the Millennium Simulation at redshift 0 for galaxy stellar mass \( > 10^{8.5}M_0\).</p>
+        </div>
+    </div>
 
     <div class="gallery">
         <img src="hmf_sel1.png" alt="Photo 1">
@@ -104,6 +118,8 @@ which gives the minimum 3D distance from each point to the percolating object. I
             <img src="cum_area_type0.png" width="600" height="600" alt="Image 14">
             <figcaption>Cumulative area under EDT distribution (for type 0 redshift 0 galaxies not a part of the Cosmic Web) plotted as a function of EDT.</figcaption>
         </figure>
+    </div>
+
     <div class="row">
         <img src="sfr1_1.png" alt="SFR Image 1">
         <img src="sfr2_2.png" alt="SFR Image 2">
