@@ -179,5 +179,11 @@ which gives the minimum 3D distance from each point to the percolating object. I
         JOIN Guo2010a..MR AS g ON p.galaxyID >= g.galaxyID LEFT JOIN Guo2010a..MR AS prev_p ON prev_p.galaxyID = p.galaxyID - 1 AND prev_p.type = 0  WHERE g.galaxyID = l.galaxyID AND
         p.galaxyID <= g.mainLeafID AND p.type = 1 AND prev_p.centralMvir <= 0.7 * p.centralMvir AND prev_p.galaxyID IS NOT NULL 
 
+    <div class="row">
+        <img src="sb_true/sb_all.png" alt="SFR Image 1">
+        <img src="sb_true/sb_cw.png" alt="SFR Image 2">
+        <img src="sb_true/sb_not_cw.png" alt="SFR Image 3">
+    </div>
+
 </body>
 </html>
