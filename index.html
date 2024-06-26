@@ -166,5 +166,18 @@ which gives the minimum 3D distance from each point to the percolating object. I
         <img src="true_sb/6.png" alt="SFR Image 3">
         <img src="true_sb/7.png" alt="SFR Image 4">
     </div>
+
+    Below are the mass histories with the new query
+    <div class="row">
+        <img src="sb_true/1.png" alt="SFR Image 1">
+        <img src="sb_true/2.png" alt="SFR Image 2">
+        <img src="sb_true/3.png" alt="SFR Image 3">
+        <img src="sb_true/4.png" alt="SFR Image 4">
+        <img src="sb_true/5.png" alt="SFR Image 2">
+    </div>
+    New query: SELECT l.x,l.y,l.z,l.stellarMass FROM Guo2010a..MR AS l WHERE l.type = 0 AND l.snapnum = 63 AND l.galaxyID < 1e13 AND EXISTS (SELECT p.galaxyID FROM Guo2010a..MR AS p 
+        JOIN Guo2010a..MR AS g ON p.galaxyID >= g.galaxyID LEFT JOIN Guo2010a..MR AS prev_p ON prev_p.galaxyID = p.galaxyID - 1 AND prev_p.type = 0  WHERE g.galaxyID = l.galaxyID AND
+        p.galaxyID <= g.mainLeafID AND p.type = 1 AND prev_p.centralMvir <= 0.7 * p.centralMvir AND prev_p.galaxyID IS NOT NULL 
+
 </body>
 </html>
