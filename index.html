@@ -61,7 +61,7 @@
 </head>
 <body>
     <h1>The relation of galaxies and dark matter haloes to the Cosmic Web</h1>
-    A collection of some interesting plots that I obtained during my internship at the Max Planck Institute for Astrophysics, Garching, Germany, under the supervision of <a href="https://wwwmpa.mpa-garching.mpg.de/~swhite/" target="_blank">Prof. Dr. Simon White</a> in collaboration with   <a href="https://pbusch.net/" target="_blank">Philipp Busch</a>. The paper, submitted to MNRAS, is now avaiable on <a href="https://doi.org/10.48550/arXiv.2412.03438" target="_blank">arXiv:2412.03438</a>.
+    A collection of some interesting plots that I obtained during my internship at the Max Planck Institute for Astrophysics, Garching, Germany, under the supervision of <a href="https://wwwmpa.mpa-garching.mpg.de/~swhite/" target="_blank">Prof. Dr. Simon White</a> in collaboration with <a href="https://pbusch.net/" target="_blank">Philipp Busch</a>. The paper, under review in MNRAS, is avaiable on <a href="https://doi.org/10.48550/arXiv.2412.03438" target="_blank">arXiv:2412.03438</a>.
     <div class="video-container">
         <iframe src="https://drive.google.com/file/d/1yULQWn4PmWLBSOIOS2xR4ryGTzdh-Ec9/preview" width="770" height="770" allow="autoplay"></iframe>
         <div class="video-caption">
@@ -75,7 +75,7 @@
             <p>A video illustrating the 3D galaxy distribution (in red) and the structure of the Cosmic Web for \(\rho_{thresh} = 5.01\left <\rho \right> \) (in black) overlaid on the Euclidean Distance Transform (EDT, in Mpc/h) distribution (in blue) in the Millennium Simulation at redshift 0 for galaxy stellar mass \( > 10^{8.5}M_\odot\). The EDT distribution is obtained for a \(1024^3\) grid and represents the minimum distance to the nearest Cosmic Web particle. For more details, see Busch & White (2020).</p>
         </div>
     </div>
-
+<p>The plots that follow have been constructed by using the EDT values of each cell as a proxy for the galaxies lying in that particular cell. We improve upon this by instead using KDTree in Python to evaluate the minimum distance of a set of the points (galaxies/haloes in this case) to another set (e.g., the particles of the web).</p>
     <div class="gallery">
         <img src="hmf_sel1.png" alt="Photo 1">
         <img src="hmf_frac_all.png" alt="Photo 2"> 
