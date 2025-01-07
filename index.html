@@ -155,9 +155,9 @@ which gives the minimum 3D distance from each point to the percolating object. I
         <img src="frac_sb_incw.png" alt="SFR Image 2">
         <img src="frac_sb_not_in_cw.png" alt="SFR Image 3">
     </div>
-    <p>In the figures below we have the fraction of backsplash galaxies as function of the mass of the central galaxy. Clearly, these fractions increase with mass, which should not be the case. We identified the
-    issue as the ambiguity in identifying the central/satellite in systems of similar mass - which would lead to the type 0 galaxy suddenly becoming a type 1 at some snapshot, and then coming back to being a type 1 galaxy. 
-    Many such cases did, in fact, appear in the mass histories of the galaxies initially identified as backsplash galaxies, which are shown below in panels 1, 2, 3, and so on. 
+    <p>In the three figures above we have the fraction of backsplash galaxies as a function of the mass of the central galaxy. These fractions increase with mass, which should not be the case. We identified the
+    issue as an effect of the ambiguity in defining the central object in merging systems - which would lead to the type 0 galaxy suddenly becoming a type 1 at some snapshot, and then coming back to being a type 0 galaxy. 
+    Many such cases did appear in the mass histories of the galaxies initially identified as backsplash galaxies, which are shown below in panels 1, 2, 3, 5, and so on. 
     </p>
     <div class="row">
         <img src="1.png" alt="SFR Image 1">
@@ -177,8 +177,7 @@ which gives the minimum 3D distance from each point to the percolating object. I
         <img src="true_sb/6.png" alt="SFR Image 3">
         <img src="true_sb/7.png" alt="SFR Image 4">
     </div>
-
-    Below are the mass histories with the new query
+<p>Thus, the backsplash galaxies were rarer than the first attempt suggested. We applied a filter which required the change in centralMvir (M200) at the type1 -> type 0 transition to be a factor of 0.7 or smaller, for which the mass histories are shown below.</p>
     <div class="row">
         <img src="sb_true/1.png" alt="SFR Image 1">
         <img src="sb_true/2.png" alt="SFR Image 2">
@@ -186,9 +185,9 @@ which gives the minimum 3D distance from each point to the percolating object. I
         <img src="sb_true/4.png" alt="SFR Image 4">
         <img src="sb_true/5.png" alt="SFR Image 2">
     </div>
-    New query: SELECT l.x,l.y,l.z,l.stellarMass FROM Guo2010a..MR AS l WHERE l.type = 0 AND l.snapnum = 63 AND l.galaxyID < 1e13 AND EXISTS (SELECT p.galaxyID FROM Guo2010a..MR AS p 
+    <!--New query: SELECT l.x,l.y,l.z,l.stellarMass FROM Guo2010a..MR AS l WHERE l.type = 0 AND l.snapnum = 63 AND l.galaxyID < 1e13 AND EXISTS (SELECT p.galaxyID FROM Guo2010a..MR AS p 
         JOIN Guo2010a..MR AS g ON p.galaxyID >= g.galaxyID LEFT JOIN Guo2010a..MR AS prev_p ON prev_p.galaxyID = p.galaxyID - 1 AND prev_p.type = 0  WHERE g.galaxyID = l.galaxyID AND
-        p.galaxyID <= g.mainLeafID AND p.type = 1 AND prev_p.centralMvir <= 0.7 * p.centralMvir AND prev_p.galaxyID IS NOT NULL 
+        p.galaxyID <= g.mainLeafID AND p.type = 1 AND prev_p.centralMvir <= 0.7 * p.centralMvir AND prev_p.galaxyID IS NOT NULL -->
 
     <div class="row">
         <img src="sb_true/sb_all.png" alt="SFR Image 1">
